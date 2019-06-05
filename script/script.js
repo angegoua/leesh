@@ -9,14 +9,20 @@ window.addEventListener('scroll', function(){
 const hamburger = document.querySelector('.menu')
 
 hamburger.addEventListener('click', function(){
+  
     const hamburgerContent = document.querySelector('.menu-content')
+    const menu = document.querySelector('.menu')
+
+    // hamburgerContent.style.transition = 0.5
+    // hamburgerContent.style.height = 100 + 'vh';
+
+    hamburgerContent.classList.toggle('menu-content-click')
+    menu.classList.toggle('active')
+
     const span = document.querySelectorAll('span')
-    
     for(let i = 0; i<span.length; i++){
-        span[i].style.backgroundColor = 'white'
+        span[i].classList.toggle('span-click')
     }
 
-    hamburgerContent.style.transition = 0.5
-    hamburgerContent.style.height = 100 + 'vh';
-
+    
 })

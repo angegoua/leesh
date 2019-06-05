@@ -1,8 +1,11 @@
 @font-face{
     font-family: 'Avenir LT Std';
-    src: url('../fonts/AvenirLTStd-Black.otf'),
+    
+    src: 
+    url('../fonts/AvenirLTStd-Light.otf'),
+    url('../fonts/AvenirLTStd-Black.otf'),
         url('../fonts/AvenirLTStd-Book.otf'),
-        url('../fonts/AvenirLTStd-Light.otf')
+        
 }
 
 body{
@@ -24,6 +27,11 @@ header{
     width: 100%;
     border-bottom: #11324F 1px solid;
     height: 50px;
+}
+
+.social-media img{
+    width: 20px;
+    height: 20px;
 }
 
 .menu{
@@ -62,6 +70,10 @@ transform: translateY(-5px)
 
 header span:nth-child(3){
     transform: translateY(5px)
+}
+
+.span-click{
+    background: white;
 }
     
 
@@ -151,7 +163,7 @@ main h3{
 }
 
 .see-more{
-    font-family: 'Avenir Lt Std';
+    font-family: 'Avenir LT Std';
     font-weight: 100;
     display: block;
     text-align: center;
@@ -199,10 +211,12 @@ main h3{
     justify-content: center;
 }
 
-/* .menu-content-click{
+.menu-content-click{
     height: 100vh;
     transition: 0.5s height;
-} */
+} 
+
+
 
 .menu-content h3{
     font-family: 'Impact';
@@ -215,7 +229,7 @@ main h3{
 .menu-content ul{
     padding: 0;
     text-align: center;
-    /* transform : translate(-50%) */
+    /* transform : translateX(-50%) */
 }
 
 li{
@@ -224,5 +238,15 @@ li{
     font-size: 2rem;
     color: white;
     font-family: 'Avenir Lt Std';
-    font-weight: lighter;
+    font-weight: 500;
+}
+.active span:nth-child(1){
+    transform: translateY(0) rotate(-45deg);
+}
+.active span:nth-child(2) {
+    transform: translateX(-30px);
+    opacity: 0;
+}
+.active span:nth-child(3){
+    transform: translateY(0) rotate(45deg);
 }
