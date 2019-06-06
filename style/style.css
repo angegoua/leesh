@@ -250,3 +250,25 @@ li{
 .active span:nth-child(3){
     transform: translateY(0) rotate(45deg);
 }
+footer{
+    margin-top: 100px;
+    background: #11324F;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer p{
+    color: white;
+    font-family: 'Avenir LT Std'
+}
+
+footer img{
+    /* display: block; */
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
